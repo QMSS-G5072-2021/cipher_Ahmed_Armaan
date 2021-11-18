@@ -1,11 +1,33 @@
 def cipher(text, shift, encrypt=True):
-    """The cipher function allows you to encrypt text by shifting each letter a certain amount.
-    The text input is a string that contains the text to be encrypted. The shift variable is 
-    an integer that determines the amount of places each letter should be shifted and replaced with.
-    encrypt is a boolean that, when true, leads to encryption of the text. For example,
-    if you put in cipher("hello", 3, True), hello will be encrypted as 'khoor'. Then, if you
-    were to decrypt the word 'khoor', using -3 for shift, as in cipher("hello", -3, True), would
-    decrypt 'khoor' back to 'hello'."""
+
+    """
+    The cipher function allows you to encrypt text by shifting each letter a certain amount.
+    
+
+    Parameters
+    ----------
+    text : string
+      text is a string that contains the text to be encrypted
+    shift : integer
+      shift is an integer that determines the amount of places each letter should be shifted (from a to z) and replaced with
+    encrpyt: boolean
+      when true, leads to encryption of the text
+
+    Returns
+    -------
+    new_test
+      The new shifted text string.
+
+    Examples
+    --------
+    >>> import cipher_asa2249.cipher_asa2249
+    >>> from cipher_asa2249 import cipher_asa2249
+    >>> a = 'cat'
+    >>> b = 3
+    >>> cipher_asa2249.cipher(a,b)
+    'fdw'
+    """
+
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
     for c in text:
