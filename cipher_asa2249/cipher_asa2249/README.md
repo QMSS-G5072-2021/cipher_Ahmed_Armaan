@@ -1,6 +1,13 @@
 # cipher_asa2249
 
-A package for eencrypting and decrypting text using the cipher algorithm.
+A package for running Julius Caesar's cipher algorithm to encrypt and decrpyt text. This algorithm takes in 
+an integer, shift, and a body of text, text, as well as a boolean for encrypt as
+implicit parameters.
+
+The integers shift determines the amount that each character is shifted in text.
+
+For example, if shift = 3, and the word is 'cat', each letter will be shifted 3
+to the right. Hence, 'cat' becomes 'fdw'.
 
 ## Installation
 
